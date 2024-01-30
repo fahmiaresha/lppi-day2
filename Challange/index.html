@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <ul>
+    <li><a class="active" href="#HOME">Home</a></li>
+    <li><a href="#PRODUCT">Product</a></li>
+    <li><a href="#GALLERY">Gallery</a></li>
+    <li><a href="#BLOG">Blog</a></li>
+    <li><a href="#MYINVENTORY">My Inventory</a></li>
+  </ul>
+  <hr style="margin-top: -10px;">
+</div>
+
+<div class="container2">
+    <div class="column">
+        <img src="images/profile.png" alt="Profile Image" class="circle-image">
+        <span style="float: right; margin-right: 300px; margin-top: -13px;">
+          <h2 id="name_value">M.Fahmi Aresha</h2>
+          <p id="role_value">Software Engineer</p>
+          <button style="background-color: #007BFF; color: #fff; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Contact</button>
+          <button style="background-color: transparent; color: #28a745; border: 2px solid #28a745; padding: 10px 15px; border-radius: 4px; cursor: pointer; font-size: 16px;">Resume</button>
+        </span>
+    </div>
+
+    <div class="column">
+        <ul>
+            <li ><b>Availability</b> <span id="availability_value" style="margin-left:50px">Full Time</span></li>
+            <br>
+            <li ><b>Usia</b> <span id="usia_value" style="margin-left:100px">23</span></li>
+            <br>
+            <li><b>Lokasi</b> <span id="location_value" style="margin-left:85px">Surabaya</span></li>
+            <br>
+            <li><b>Pengalaman</b> <span id="experience_value" style="margin-left:40px">1</span></li>
+            <br>
+            <li><b>Email</b> <span id="email_value" style="margin-left:90px">areshafahm@gmail.com</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container" id="form_container">
+    <form action="#" method="post" class="job-form" id="myForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" >
+
+        <label for="role">Role</label>
+        <input type="text" id="role" name="role" >
+
+        <label for="availability">Availability</label>
+        <select id="availability" name="availability" >
+            <option value="full-time">Full Time</option>
+            <option value="part-time">Part Time</option>
+            <option value="freelance">Freelance</option>
+        </select>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" >
+
+        <label for="experience">Location</label>
+        <input type="text" id="locationInput" name="location" >
+
+        <label for="experience">Years of Experience</label>
+        <input type="number" id="experience" name="experience" >
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" >
+
+        <button  style="background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;" onclick="getData();event.preventDefault();">Submit</button>
+    </form>
+</div>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
